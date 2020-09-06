@@ -1,8 +1,15 @@
 #Mapas censales según manzana 
 #Cargamos nuestro shape con la información relativa a la participación electoral
 library(tidyverse)
+library(mapview)
+library(sf)
+library(ggmap)
+library(readxl)
+library(rgdal)
+library(sp)
 library(chilemapas)
-library(WriteXLS)
+library(leaflet)
+library(leafpop)
 #Cargamos nuestro archivo con la información a nivel censal (csv)
 municipios<-st_read("C:/Users/pc/Desktop/r13/R13/MANZANA_IND_C17.shp")
 ##Graficar
